@@ -1,3 +1,7 @@
+body {
+    align-items: center;
+    justify-content: center;
+}
 
 .box {
     background-color: lavenderblush;
@@ -22,4 +26,9 @@
     display: flex;
     flex-direction: column;
     align-items: stretch;
+}
+
+.btncontainer {
+    display: flex;
+    justify-content: center;
 }

@@ -1,9 +1,18 @@
 const body = document.querySelector("body");
 
+let btnContainer = document.createElement("div");
+btnContainer.classList.add("btncontainer");
+body.appendChild(btnContainer);
+
 let squaresBtn = document.createElement("button");
-body.appendChild(squaresBtn);
+btnContainer.appendChild(squaresBtn);
 squaresBtn.textContent = "Choose how big you want the grid!";
-squaresBtn.style.cssText = "margin-bottom: 50px;";
+squaresBtn.style.cssText = "display: flex; flex: 1; padding: 30px; justify-content: center;";
+
+let container = document.createElement("div");
+container.classList.add("container");
+container.style.cssText = "display: flex; flex: 1; margin: auto; margin-top: 50px";
+body.appendChild(container);
 
 squaresBtn.addEventListener("click", pickNoOfSquares);
 
@@ -27,9 +36,5 @@ function pickNoOfSquares () {
         alert("Please enter a number less than 50.");
     }
 }
-
-let container = document.createElement("div");
-container.classList.add("container");
-body.appendChild(container);
 
 
