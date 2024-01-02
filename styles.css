@@ -10,3 +10,7 @@
 .line {
     display: flex;
 }
+
+.black {
+    background-color: black;
+}
