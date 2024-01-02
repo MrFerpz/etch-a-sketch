@@ -1,7 +1,7 @@
 
 .box {
     background-color: lavenderblush;
-    border: 3px solid black;
+    border: 1px solid black;
     margin: -1.5px;
     flex-grow: 1;
 }

@@ -18,12 +18,8 @@ function pickNoOfSquares () {
             for (let i = 1; i <= noSquares; i++) {
                 let box = document.createElement("div");
                 box.classList.add("box");
-                box.addEventListener("mousedown", () => {
-                    if (box.classList.contains("black")) {
-                        box.classList.remove("black");
-                    } else {
-                        box.classList.add("black")};
-                })
+                box.addEventListener("mouseover", () => {
+                    box.classList.add("black")})
                 line.appendChild(box);
              }
         }
