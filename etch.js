@@ -11,8 +11,11 @@ for (let y = 0; y <= 16; y++) {
     for (let i = 0; i <= 16; i++) {
         let box = document.createElement("div");
         box.classList.add("box");
-        box.addEventListener("click", () => {
-            box.classList.add("black");
+        box.addEventListener("mousedown", () => {
+            if (box.classList.contains("black")) {
+                box.classList.remove("black");
+            } else {
+                box.classList.add("black")};
         })
         line.appendChild(box);
      }
